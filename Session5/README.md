@@ -14,7 +14,7 @@ Click on the title of each step to access the notebook associated with the exper
 
 
 
-## [Step 0: Creating a basic foundation to build upon]()
+## [Step 0: Creating a basic foundation to build upon](https://github.com/abhiram-ds/EVA6/blob/main/Session5/MNIST_10K_Params-EVA6_Session_5-Step0.ipynb)
 
 We have implemented our learning to implement all the basic concepts that help form a good foundation of a deep learning model like Batch Normalization, Max Pooling, GAP and Fully Convolutional 1x1 layers along with Convolutional layers.
 
@@ -31,7 +31,7 @@ Although the training accuracy looks good, Model is overfitting. In the 15th epo
 We think we have achieved our goal of creating a good base model. Adding regularization in the form of dropout might help reduce the overfitting, which we will try in the next step.
 
 
-## [Step 1: Apply regularization to reduce overfitting]()
+## [Step 1: Apply regularization to reduce overfitting](https://github.com/abhiram-ds/EVA6/blob/main/Session5/MNIST_10K_Params-EVA6_Session_5-Step1.ipynb)
 
 Apply regularization to bring overfitting within acceptable range.  
 
@@ -44,7 +44,7 @@ No. of Parameters | Train Accuracy | Test Accuracy|
 
 Dropout Regularization(6%) has been added at the end of first and second convolution blocks (randomly), which helped reduce overfitting as expected. The model still needs to learn more efficiently without overfitting and to help the model identify the test images, for which we can try Data Augmentation.
 
-## [Step 2: Using Data Augmentation]()
+## [Step 2: Using Data Augmentation](https://github.com/abhiram-ds/EVA6/blob/main/Session5/MNIST_10K_Params-EVA6_Session_5-Step2.ipynb)
 
 Use Data Augmentation - Random Rotation of Training Images to help model identify images better while testing and also hopefully help reduce overfitting.
 
@@ -57,7 +57,7 @@ No. of Parameters | Train Accuracy | Test Accuracy|
 
 Data Augmentation has helped the model reduce overfitting. But, overall accuracy has reduced, which is acceptable for now.
 
-## [Step 3: Using Dynamic Learning Rate]()
+## [Step 3: Using Dynamic Learning Rate](https://github.com/abhiram-ds/EVA6/blob/main/Session5/MNIST_10K_Params-EVA6_Session_5-Step3.ipynb)
 
 Use LR scheduler - ReduceLROnPlateau to dynamically update the Learning Rate. This should hopefully help us cross the accuracy of both testing and training beyond 99.*%.
 
@@ -69,7 +69,7 @@ No. of Parameters | Train Accuracy | Test Accuracy|
 
 Bringing in the LR scheduler has definitely helped in inceasing the training & test accuracy, and we even achieved our target of 99.41% in the 13th & 14th epochs, but the accuracy dropped down to 99.37% in the 15th epoch.
 
-## [Step 4: Playing with the Optimizer]()
+## [Step 4: Playing with the Optimizer](https://github.com/abhiram-ds/EVA6/blob/main/Session5/MNIST_10K_Params-EVA6_Session_5-Step4.ipynb)
 
 Even after successive runs, the model failed to hold on after reaching the target of 99.4% test accuracy.
 Replace optimizer to see if Adam can help sustain the accuracy obtained.
