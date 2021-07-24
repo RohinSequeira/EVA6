@@ -1,1 +1,1 @@
-# Anchor box creation for Sample Coco Annotations, using KMean Clustering algorithm
+# Anchor box creation for Sample Coco Annotations, using KMeans Clustering algorithm
